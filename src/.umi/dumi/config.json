@@ -1,0 +1,49 @@
+{
+  "menus": {
+    "zh-CN": {
+      "*": [
+        {
+          "path": "/",
+          "title": "介绍",
+          "meta": {}
+        },
+        {
+          "title": "EbButton",
+          "path": "/eb-button",
+          "meta": {
+            "__fallback": true
+          },
+          "children": [
+            {
+              "path": "/eb-button",
+              "title": "Button按钮",
+              "meta": {}
+            }
+          ]
+        },
+        {
+          "title": "EbTable",
+          "path": "/eb-table",
+          "meta": {},
+          "children": []
+        }
+      ]
+    }
+  },
+  "locales": [
+    {
+      "name": "zh-CN",
+      "label": "中文"
+    }
+  ],
+  "navs": {},
+  "title": "业务组件库",
+  "logo": "logo1.jpg",
+  "description": "企业业务组件库",
+  "mode": "doc",
+  "repository": {
+    "url": "",
+    "branch": "master"
+  },
+  "theme": {}
+}

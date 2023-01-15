@@ -1,0 +1,13 @@
+{
+  "EbButton": {
+    "default": [
+      {
+        "identifier": "type",
+        "description": "设置按钮类型",
+        "type": "string",
+        "default": "default",
+        "required": true
+      }
+    ]
+  }
+}
