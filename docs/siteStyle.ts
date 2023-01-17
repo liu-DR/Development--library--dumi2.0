@@ -21,6 +21,10 @@ const style = `
 .dumi-default-doc-layout-toc-wrapper > h4 {
     display: none
 }
+
+.markdown td{
+  text-align: center
+}
 `;
 
 export default style;

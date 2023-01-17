@@ -1,37 +1,15 @@
-
-export interface EbButtonPropsType {
-  /**
-   * 可以这样写属性描述
-   * @description       设置按钮类型
-   * @default           default
-   */
-  type: string; // 支持识别 TypeScript 可选类型为非必选属性
-
-  /**
-   * @description       按钮文字
-   * @default
-   */
-  title: string;
-}
-
+// 组件源代码
 import React from 'react';
+import { EbButtonPropsType } from './interface';
 
-const EbButton: React.FC<EbButtonPropsType> = (props: { type: string; }) => {
-  const {
-    type
-  } = props
+const EbButton: React.FC<EbButtonPropsType> = (props) => {
+  const { type, children } = props;
 
   return (
     <div>
-      <span>Button按钮</span>
+      <span>{children}</span>
     </div>
-  )
-}
+  );
+};
 
-// const EbButtonPropsType = () => null
-
-// export {
-//   EbButtonPropsType
-// }
-
-export default EbButton
+export default EbButton;
