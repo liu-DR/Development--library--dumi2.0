@@ -9,11 +9,10 @@ interface EbButtonPropsType {
    * @description       设置按钮类型
    * @default           default
    */
-  type: string; // 支持识别 TypeScript 可选类型为非必选属性
-
+  type?: 'primary' | 'danger' | 'warning' | 'info' | 'text'; // 支持识别 TypeScript 可选类型为非必选属性
   /**
    * @description       按钮文字
-   * @default
+   * @default '大大的'
    */
   title: string;
 }

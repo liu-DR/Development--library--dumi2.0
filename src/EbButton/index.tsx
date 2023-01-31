@@ -3,7 +3,8 @@ import React from 'react';
 import { EbButtonPropsType } from './interface';
 
 const EbButton: React.FC<EbButtonPropsType> = (props) => {
-  const { type, children } = props;
+  const { children } = props;
+  console.log(props, 'props');
 
   return (
     <div>
