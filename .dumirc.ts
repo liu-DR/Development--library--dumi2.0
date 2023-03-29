@@ -4,11 +4,9 @@ import style from './docs/siteStyle';
 export default defineConfig({
   // base: '/component/',
   // publicPath: '/component/',
-  apiParser: {},
   resolve: {
     docDirs: ['docs'],
     atomDirs: [{ type: 'component', dir: '/src' }],
-    entryFile: './src/index.ts',
   },
   themeConfig: {
     name: '业务组件库',
@@ -20,8 +18,6 @@ export default defineConfig({
         link: '/components/eb-overview',
       },
     ],
-    hd: true,
-    rtl: true,
   },
   history: {
     type: 'hash',

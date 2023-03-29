@@ -35,7 +35,7 @@ toc: content
 
 <!-- 只有这样写，demo-cols分栏才能生效 -->
 
-<code src="./demo/DefaultButton.tsx"></code> <code src="./demo/DefaultButton.tsx"></code>
+<code src="./demo/DefaultButton.tsx"></code>
 
 ## API
 
