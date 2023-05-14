@@ -2,8 +2,7 @@ import { defineConfig } from 'dumi';
 import style from './docs/siteStyle';
 
 export default defineConfig({
-  // base: '/component/',
-  // publicPath: '/component/',
+  apiParser: {},
   resolve: {
     docDirs: ['docs'],
     atomDirs: [{ type: 'component', dir: '/src' }],
@@ -17,12 +16,15 @@ export default defineConfig({
         title: '组件',
         link: '/components/eb-overview',
       },
+      { title: '学习文档', link: '/studyword' },
     ],
+    // hd: true,
+    // rtl: true,
   },
-  history: {
-    type: 'hash',
-  },
-  hash: false,
+  // history: {
+  //   type: 'hash',
+  // },
+  hash: true,
   favicons: ['logo2.jpeg'],
   outputPath: 'docs-dist',
   locales: [{ id: 'zh-CN', name: '中文' }],
