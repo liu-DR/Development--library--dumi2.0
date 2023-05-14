@@ -6,10 +6,11 @@ export default defineConfig({
   resolve: {
     docDirs: ['docs'],
     atomDirs: [{ type: 'component', dir: '/src' }],
+    entryFile: './src/index.ts',
   },
   themeConfig: {
     name: '业务组件库',
-    logo: 'logo1.jpg',
+    logo: '/logo1.jpg',
     nav: [
       { title: '指南', link: '/guide' },
       {
@@ -25,7 +26,7 @@ export default defineConfig({
   //   type: 'hash',
   // },
   hash: true,
-  favicons: ['logo2.jpeg'],
+  favicons: ['/logo2.jpeg'],
   outputPath: 'docs-dist',
   locales: [{ id: 'zh-CN', name: '中文' }],
   // more config: https://d.umijs.org/config
