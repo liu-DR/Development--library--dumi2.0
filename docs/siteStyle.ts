@@ -1,5 +1,12 @@
 const style = `
 
+.dumi-default-doc-layout > main {
+    max-width: 100% !important
+}
+.dumi-default-header-content {
+    max-width: 100% !important
+}
+
 .dumi-default-header-left{
     width: 260px !important
 }
@@ -16,14 +23,15 @@ const style = `
     background-color: #e6f4ff
 }
 
-
-
 .dumi-default-doc-layout-toc-wrapper > h4 {
     display: none
 }
 
-.markdown td{
-  text-align: center
+.dumi-default-table-content > table > tbody > tr > td:nth-child(1){
+    width: 150px
+}
+.dumi-default-table-content > table > tbody > tr > td:nth-child(4){
+    width: 120px
 }
 `;
 
